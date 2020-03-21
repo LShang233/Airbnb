@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="CSS/header.css">
+
+</head>
+
+<body class>
+    <header class="i1" id="header">
+        <div class="headers">
+            <div class="home fl">
+                <a href="https://www.airbnb.cn/?logo=1">
+                    <img src="images/Airbnb.png"></a>
+            </div>
+            <div class="search fl">
+                <div>
+                    <img src="images/find.jpg">
+                </div>
+                <div class="input fl">
+                    <input placeholder="搜“克里特岛(Crete)”试试">
+                </div>
+            </div>
+            <div class="fr">
+                <nav>
+                    <ul class="headul">
+                        <li>
+                            <button type="button" class="language">
+                                <div>
+                                    <div><img src="images/language.png"></div>
+                                    <span>简体中文(CN)</span>
+                                </div>
+                            </button>
+
+                        </li>
+                        <li>
+                            <button type="button" id="moneyA">
+                                <div>
+                                    <span>¥ CNY</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <div id="codes">
+                                <div>
+                                    <span>手机端</span>
+                                </div>
+                            </div>
+                            <div id="code" class="hide">
+                                <img src="images/二维码.png">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <span>出租房源</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <span>开展体验</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <span>故事</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="#">
+                                        <span>历史足迹</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <div>
+                                    <span>帮助</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <div>
+                                    <span>注册</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <div>
+                                    <span>登录</span>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <button class="changepic l" id="changepicA">
+            <img src="images/left.png">
+        </button>
+        <button class="changepic r" id="changepicB">
+            <img src="images/right.png">
+        </button>
+        <div class="tit" id="titA">
+            <p class="tit1">首批十项承诺抗击疫情重振信心</p>
+            <p class="tit2">爱彼迎中国投入七千万元成立专项基金</p>
+            <button class="titButton">查看详情</button>
+        </div>
+        <div class="tit hide" id="titB">
+            <p class="tit1">住久一点更像家</p>
+            <p class="tit2">周租月租，优惠 6 折起</p>
+            <button class="titButton">查看合集</button>
+        </div>
+        <div class="findRoomAndProgress">
+            <div class="prog">
+                <div class="progress fl">
+                    <div id="progA" style="width: 0;"></div>
+                </div>
+                <div class="progress fl">
+                    <div id="progB" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="findRoom fl">
+                <select class="fl">
+                    <option value="房源">房源</option>
+                    <option value="体验">体验</option>
+                </select>
+                <div class="enter fl">
+                    <div>
+                        <img src="images/locate.jpg">
+                    </div>
+                    <div class="enterPlace fl">
+                        <input placeholder="输入目的地、城市或景点">
+                    </div>
+                </div>
+                <div class="data fl">
+                    <div>
+                        <img src="images/data.jpg">
+                    </div>
+                    <div>
+                        <span>入住日期</span>
+                    </div>
+                    <div>
+                        <span>-</span>
+                    </div>
+                    <div>
+                        <span>退房日期</span>
+                    </div>
+                </div>
+                <div class="find fl">
+                    <button class="findButtom">搜索</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mainer">
+        <div class="listings">
+            <div class="listH">
+                <h3>新春特惠房源</h3>
+                <span>特惠房源低至 7 折</span>
+            </div>
+            <div class="listButtonOut">
+                <div class="listButtons" style="transform:translateX(0px)">
+                    <button class="listButton" id="here">这里
+                    </button><button class="listButton" id="there">那里
+                    </button><button class="listButton">广州
+                    </button><button class="listButton">广州
+                    </button><button class="listButton">广州
+                    </button><button class="listButton">广州
+                    </button><button class="listButton">广州
+                    </button><button class="listButton">广州</button>
+                </div>
+                <div class="listbgr"></div>
+                <div class="listright listr">
+                    <div>
+                        <img src="images/wonderfulright.jpg" class="listimage">
+                    </div>
+                </div>
+            </div>
+
+            <div class="rooms" id="hererooms">
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img1.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img1.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img1.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img1.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img1.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img1.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">
+                    <span>查看更多广州房源</span>
+                    <img src="images/greenright.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="listings">
+            <div class="listH">
+                <h3>周租月租房源优惠</h3>
+                <span>多住几天，省钱更省心</span>
+            </div>
+            <div class="listButtonOut">
+                <div class="listButtons" style="transform:translateX(0px)">
+                    <button class="listButton">深圳
+                    </button><button class="listButton">深圳
+                    </button><button class="listButton">深圳
+                    </button><button class="listButton">深圳
+                    </button><button class="listButton">深圳
+                    </button><button class="listButton">深圳
+                    </button><button class="listButton">深圳
+                    </button><button class="listButton">深圳</button>
+                </div>
+                <div class="listbgr"></div>
+                <div class="listright listr">
+                    <div>
+                        <img src="images/wonderfulright.jpg" class="listimage">
+                    </div>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img2.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star2.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img2.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img2.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star2.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img2.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star2.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img2.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img2.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">
+                    <span>查看更多深圳房源</span>
+                    <img src="images/greenright.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="wantToGo">
+            <div class="listH">
+                <h3>你可能也想去</h3>
+                <span>这个时节，同城的人都爱去</span>
+            </div>
+            <div class="wtgUlOut">
+                <div class="wtgleft wtgr hide" id="wtgleft">
+                    <div>
+                        <img src="images/wonderfulleft.jpg">
+                    </div>
+                </div>
+                <div class="oh">
+                    <ul class="wtgUl" id="wtgUl" style="transform:translateX(0px)">
+                        <li class="wtgLi">
+                            <div class="wtgA">
+                                <a href="#">
+                                    <div class="wtgDiv">
+                                        <div class="wtgPic">
+                                            <img src="images/深圳.jpg">
+                                            <div class="wtgShadow"></div>
+                                            <div class="wtgWord">
+                                                <p>深圳</p>
+                                                <span>均价 ¥225/晚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><li class="wtgLi">
+                            <div class="wtgA">
+                                <a href="#">
+                                    <div class="wtgDiv">
+                                        <div class="wtgPic">
+                                            <img src="images/深圳.jpg">
+                                            <div class="wtgShadow"></div>
+                                            <div class="wtgWord">
+                                                <p>深圳</p>
+                                                <span>均价 ¥225/晚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><li class="wtgLi">
+                            <div class="wtgA">
+                                <a href="#">
+                                    <div class="wtgDiv">
+                                        <div class="wtgPic">
+                                            <img src="images/深圳.jpg">
+                                            <div class="wtgShadow"></div>
+                                            <div class="wtgWord">
+                                                <p>深圳</p>
+                                                <span>均价 ¥225/晚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><li class="wtgLi">
+                            <div class="wtgA">
+                                <a href="#">
+                                    <div class="wtgDiv">
+                                        <div class="wtgPic">
+                                            <img src="images/深圳.jpg">
+                                            <div class="wtgShadow"></div>
+                                            <div class="wtgWord">
+                                                <p>深圳</p>
+                                                <span>均价 ¥225/晚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><li class="wtgLi">
+                            <div class="wtgA">
+                                <a href="#">
+                                    <div class="wtgDiv">
+                                        <div class="wtgPic">
+                                            <img src="images/深圳.jpg">
+                                            <div class="wtgShadow"></div>
+                                            <div class="wtgWord">
+                                                <p>深圳</p>
+                                                <span>均价 ¥225/晚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><li class="wtgLi">
+                            <div class="wtgA">
+                                <a href="#">
+                                    <div class="wtgDiv">
+                                        <div class="wtgPic">
+                                            <img src="images/深圳.jpg">
+                                            <div class="wtgShadow"></div>
+                                            <div class="wtgWord">
+                                                <p>深圳</p>
+                                                <span>均价 ¥225/晚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><li class="wtgLi">
+                            <div class="wtgA">
+                                <a href="#">
+                                    <div class="wtgDiv">
+                                        <div class="wtgPic">
+                                            <img src="images/深圳.jpg">
+                                            <div class="wtgShadow"></div>
+                                            <div class="wtgWord">
+                                                <p>深圳</p>
+                                                <span>均价 ¥225/晚</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wtgright wtgr" id="wtgright">
+                    <div>
+                        <img src="images/wonderfulright.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="listings">
+            <h3>热门目的地</h3>
+            <div class="listButtonOut">
+                <div class="listButtons" style="transform:translateX(0px)">
+                    <button class="listButton">成都
+                    </button><button class="listButton">成都
+                    </button><button class="listButton">成都
+                    </button><button class="listButton">成都
+                    </button><button class="listButton">成都
+                    </button><button class="listButton">成都
+                    </button><button class="listButton">成都
+                    </button><button class="listButton">成都</button>
+                </div>
+                <div class="listbgr"></div>
+                <div class="listright listr">
+                    <div>
+                        <img src="images/wonderfulright.jpg" class="listimage">
+                    </div>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img3.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img3.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img3.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img3.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img3.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="roomOut">
+                    <div class="room">
+                        <div>
+                            <a href="#">
+                                <img src="images/img3.jpg" class="roomImg">
+                            </a>
+                        </div>
+                        <a href="#" class="roomWord">
+                            <span class="spanGreen">整套公寓·1张床</span>
+                            <p class="roomP oh">【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居</p>
+                            <div class="roomPri">
+                                <p class="roomP2 fl">¥158</p>
+                                <span class="roomSpan2 lt">¥198</span>
+                                <span class="roomSpan2">每晚</span>
+                            </div>
+                        </a>
+                        <div class="star">
+                            <img src="images/star1.png">
+                            <span class="starSpan ">15·超赞房东</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">
+                    <span>查看更多成都房源</span>
+                    <img src="images/greenright.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="guarantees">
+            <h3>爱彼迎旅行保障</h3>
+            <div class="guaranteeSqu">
+                <div class="guarantee">
+                    <div class="guaDivOut">
+                        <div class="guaDiv">
+                            <img src="images/save1.png">
+                            <div>
+                                <span class="guaSpan">安心房源保障</span>
+                                <span>人工审核所有中国房源页面信息，入住更放心</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guarantee">
+                    <div class="guaDivOut">
+                        <div class="guaDiv">
+                            <img src="images/save2.png">
+                            <div>
+                                <span class="guaSpan">专业中文客服</span>
+                                <span>(86) 400-841-8888、(86) 010-8783-3463，24 小时服务</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guarantee">
+                    <div class="guaDivOut">
+                        <div class="guaDiv">
+                            <img src="images/save3.png">
+                            <div>
+                                <span class="guaSpan">旅行安全保障</span>
+                                <span>多重风险控制设计，全方位保障您的行程安全</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">
+                    <span>查看全方位保障计划</span>
+                </a>
+            </div>
+        </div>
+        <div class="plus">
+            <div class="listH">
+                <h3>爱彼迎Plus房源</h3>
+                <span>品质和设计经过验证的精选房源系列</span>
+            </div>
+            <div class="plusPicOut">
+                <div class="plusPic">
+                    <a href="#">
+                        <div class="plusButt">
+                            <span>浏览 Plus 房源</span>
+                            <img src="images/wonderfulright.jpg">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="classic">
+            <h3>经典旅行城市</h3>
+            <ul>
+                <li>
+                    <div class="classicDivOut">
+                        <a href="#">
+                            <div class="classicDiv">
+                                <img src="images/Scripture1.jpg">
+                                <div class="classicWord">
+                                    <span class="classicSpan">香港 亚洲美食之都</span><br>
+                                    <span>人均￥440/晚</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="classicDivOut">
+                        <a href="#">
+                            <div class="classicDiv">
+                                <img src="images/Scripture1.jpg">
+                                <div class="classicWord">
+                                    <span class="classicSpan">香港 亚洲美食之都</span><br>
+                                    <span>人均￥440/晚</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="classicDivOut">
+                        <a href="#">
+                            <div class="classicDiv">
+                                <img src="images/Scripture1.jpg">
+                                <div class="classicWord">
+                                    <span class="classicSpan">香港 亚洲美食之都</span><br>
+                                    <span>人均￥440/晚</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="classicDivOut">
+                        <a href="#">
+                            <div class="classicDiv">
+                                <img src="images/Scripture1.jpg">
+                                <div class="classicWord">
+                                    <span class="classicSpan">香港 亚洲美食之都</span><br>
+                                    <span>人均￥440/晚</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="classicDivOut">
+                        <a href="#">
+                            <div class="classicDiv">
+                                <img src="images/Scripture1.jpg">
+                                <div class="classicWord">
+                                    <span class="classicSpan">香港 亚洲美食之都</span><br>
+                                    <span>人均￥440/晚</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="classicDivOut">
+                        <a href="#">
+                            <div class="classicDiv">
+                                <img src="images/Scripture1.jpg">
+                                <div class="classicWord">
+                                    <span class="classicSpan">香港 亚洲美食之都</span><br>
+                                    <span>人均￥440/晚</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="wonderful">
+            <h3>精彩旅行故事</h3>
+            <div class="wonderfulRooms">
+                <div class="wonderfulDivOut">
+                    <div class="wonderfulDiv">
+                        <a href="#">
+                            <div class="wonderfulImg">
+                                <img src="images/good1.png">
+                                <div class="wonderfulButt">
+                                    <span>房源</span>
+                                </div>
+                            </div>
+                            <div class="wonderfulWord">
+                                <span><span class="wonderfulSpan">广州 </span>房东说，欢迎体验你的 “珠江之夜”。</span>
+                            </div>
+                            <div class="wonderfulHost">
+                                <img src="images/person1.jpg">
+                                <div class="wonderfulInformation">
+                                    <img src="images/good2.jpg">
+                                    <span>49</span>
+                                    <img src="images/speech.jpg">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="wonderfulDivOut">
+                    <div class="wonderfulDiv">
+                        <a href="#">
+                            <div class="wonderfulImg">
+                                <img src="images/good1.png">
+                                <div class="wonderfulButt">
+                                    <span>房源</span>
+                                </div>
+                            </div>
+                            <div class="wonderfulWord">
+                                <span><span class="wonderfulSpan">广州 </span>房东说，欢迎体验你的 “珠江之夜”。</span>
+                            </div>
+                            <div class="wonderfulHost">
+                                <img src="images/person1.jpg">
+                                <div class="wonderfulInformation">
+                                    <img src="images/good2.jpg">
+                                    <span>49</span>
+                                    <img src="images/speech.jpg">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="wonderfulDivOut">
+                    <div class="wonderfulDiv">
+                        <a href="#">
+                            <div class="wonderfulImg">
+                                <img src="images/good1.png">
+                                <div class="wonderfulButt">
+                                    <span>房源</span>
+                                </div>
+                            </div>
+                            <div class="wonderfulWord">
+                                <span><span class="wonderfulSpan">广州 </span>房东说，欢迎体验你的 “珠江之夜”。</span>
+                            </div>
+                            <div class="wonderfulHost">
+                                <img src="images/person1.jpg">
+                                <div class="wonderfulInformation">
+                                    <img src="images/good2.jpg">
+                                    <span>49</span>
+                                    <img src="images/speech.jpg">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="wonderfulDivOut">
+                    <div class="wonderfulDiv">
+                        <a href="#">
+                            <div class="wonderfulImg">
+                                <img src="images/good1.png">
+                                <div class="wonderfulButt">
+                                    <span>房源</span>
+                                </div>
+                            </div>
+                            <div class="wonderfulWord">
+                                <span><span class="wonderfulSpan">广州 </span>房东说，欢迎体验你的 “珠江之夜”。</span>
+                            </div>
+                            <div class="wonderfulHost">
+                                <img src="images/person1.jpg">
+                                <div class="wonderfulInformation">
+                                    <img src="images/good2.jpg">
+                                    <span>49</span>
+                                    <img src="images/speech.jpg">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="wonderfulDivOut">
+                    <div class="wonderfulDiv">
+                        <a href="#">
+                            <div class="wonderfulImg">
+                                <img src="images/good1.png">
+                                <div class="wonderfulButt">
+                                    <span>房源</span>
+                                </div>
+                            </div>
+                            <div class="wonderfulWord">
+                                <span><span class="wonderfulSpan">广州 </span>房东说，欢迎体验你的 “珠江之夜”。</span>
+                            </div>
+                            <div class="wonderfulHost">
+                                <img src="images/person1.jpg">
+                                <div class="wonderfulInformation">
+                                    <img src="images/good2.jpg">
+                                    <span>49</span>
+                                    <img src="images/speech.jpg">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="wonderfulDivOut">
+                    <div class="wonderfulDiv">
+                        <a href="#">
+                            <div class="wonderfulImg">
+                                <img src="images/good1.png">
+                                <div class="wonderfulButt">
+                                    <span>房源</span>
+                                </div>
+                            </div>
+                            <div class="wonderfulWord">
+                                <span><span class="wonderfulSpan">广州 </span>房东说，欢迎体验你的 “珠江之夜”。</span>
+                            </div>
+                            <div class="wonderfulHost">
+                                <img src="images/person1.jpg">
+                                <div class="wonderfulInformation">
+                                    <img src="images/good2.jpg">
+                                    <span>49</span>
+                                    <img src="images/speech.jpg">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="wonderfulDivOut">
+                    <div class="wonderfulDiv">
+                        <a href="#">
+                            <div class="wonderfulImg">
+                                <img src="images/good1.png">
+                                <div class="wonderfulButt">
+                                    <span>房源</span>
+                                </div>
+                            </div>
+                            <div class="wonderfulWord">
+                                <span><span class="wonderfulSpan">广州 </span>房东说，欢迎体验你的 “珠江之夜”。</span>
+                            </div>
+                            <div class="wonderfulHost">
+                                <img src="images/person1.jpg">
+                                <div class="wonderfulInformation">
+                                    <img src="images/good2.jpg">
+                                    <span>49</span>
+                                    <img src="images/speech.jpg">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="wonderfulDivOut">
+                    <div class="wonderfulDiv">
+                        <a href="#">
+                            <div class="wonderfulImg">
+                                <img src="images/good1.png">
+                                <div class="wonderfulButt">
+                                    <span>房源</span>
+                                </div>
+                            </div>
+                            <div class="wonderfulWord">
+                                <span><span class="wonderfulSpan">广州 </span>房东说，欢迎体验你的 “珠江之夜”。</span>
+                            </div>
+                            <div class="wonderfulHost">
+                                <img src="images/person1.jpg">
+                                <div class="wonderfulInformation">
+                                    <img src="images/good2.jpg">
+                                    <span>49</span>
+                                    <img src="images/speech.jpg">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="wonderfulAll">
+                <span>显示全部</span>
+                <img src="images/wonderfulright.jpg">
+            </a>
+        </div>
+        <div class="high">
+            <div class="listH">
+                <h3>高分体验</h3>
+                <span>在下趟旅程中，不妨预订由本地达人组织的体验活动。</span>
+            </div>
+            <div class="highSqu">
+                <a href="#">
+                    <div class="highDivOut">
+                        <div class="highDiv">
+                            <div class="highImg">
+                                <img src="images/last1.jpg">
+                            </div>
+                            <div class="highWord">
+                                <span class="highCountry">意大利</span>
+                                <p class="highP">Luca和Lorenzo的基安蒂山烹饪之旅</p>
+                                <div class="highPri">￥973/人起</div>
+                                <div class="highEvaluation">
+                                    <span class="highGreen">5.0</span>
+                                    <img src="images/star.png">
+                                    <span>(1777)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="highDivOut">
+                        <div class="highDiv">
+                            <div class="highImg">
+                                <img src="images/last1.jpg">
+                            </div>
+                            <div class="highWord">
+                                <span class="highCountry">意大利</span>
+                                <p class="highP">Luca和Lorenzo的基安蒂山烹饪之旅</p>
+                                <div class="highPri">￥973/人起</div>
+                                <div class="highEvaluation">
+                                    <span class="highGreen">5.0</span>
+                                    <img src="images/star.png">
+                                    <span>(1777)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="highDivOut">
+                        <div class="highDiv">
+                            <div class="highImg">
+                                <img src="images/last1.jpg">
+                            </div>
+                            <div class="highWord">
+                                <span class="highCountry">意大利</span>
+                                <p class="highP">Luca和Lorenzo的基安蒂山烹饪之旅</p>
+                                <div class="highPri">￥973/人起</div>
+                                <div class="highEvaluation">
+                                    <span class="highGreen">5.0</span>
+                                    <img src="images/star.png">
+                                    <span>(1777)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="highDivOut">
+                        <div class="highDiv">
+                            <div class="highImg">
+                                <img src="images/last1.jpg">
+                            </div>
+                            <div class="highWord">
+                                <span class="highCountry">意大利</span>
+                                <p class="highP">Luca和Lorenzo的基安蒂山烹饪之旅</p>
+                                <div class="highPri">￥973/人起</div>
+                                <div class="highEvaluation">
+                                    <span class="highGreen">5.0</span>
+                                    <img src="images/star.png">
+                                    <span>(1777)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="highDivOut">
+                        <div class="highDiv">
+                            <div class="highImg">
+                                <img src="images/last1.jpg">
+                            </div>
+                            <div class="highWord">
+                                <span class="highCountry">意大利</span>
+                                <p class="highP">Luca和Lorenzo的基安蒂山烹饪之旅</p>
+                                <div class="highPri">￥973/人起</div>
+                                <div class="highEvaluation">
+                                    <span class="highGreen">5.0</span>
+                                    <img src="images/star.png">
+                                    <span>(1777)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="highDivOut">
+                        <div class="highDiv">
+                            <div class="highImg">
+                                <img src="images/last1.jpg">
+                            </div>
+                            <div class="highWord">
+                                <span class="highCountry">意大利</span>
+                                <p class="highP">Luca和Lorenzo的基安蒂山烹饪之旅</p>
+                                <div class="highPri">￥973/人起</div>
+                                <div class="highEvaluation">
+                                    <span class="highGreen">5.0</span>
+                                    <img src="images/star.png">
+                                    <span>(1777)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="wonderfulAll">
+                    <span>显示所有体验</span>
+                    <img src="images/wonderfulright.jpg">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footers">
+            <div class="foots">
+                <div class="footOut">
+                    <div class="foot">
+                        <div class="footTit">爱彼迎</div>
+                        <ul>
+                            <li><a href="#">工作机会</a></li>
+                            <li><a href="#">爱彼迎新闻</a></li>
+                            <li><a href="#">政策</a></li>
+                            <li><a href="#">多元化与归属感</a></li>
+                            <li><a href="#">无障碍设施</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footOut">
+                    <div class="foot">
+                        <div class="footTit">发现</div>
+                        <ul>
+                            <li><a href="#">信任与安全</a></li>
+                            <li><a href="#">旅行基金</a></li>
+                            <li><a href="#">爱彼迎公民</a></li>
+                            <li><a href="#">商务差旅</a></li>
+                            <li><a href="#">缤纷体验</a></li>
+                            <li><a href="#">爱彼迎杂志</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footOut">
+                    <div class="foot">
+                        <div class="footTit">出租</div>
+                        <ul>
+                            <li><a href="#">为什么要出租？</a></li>
+                            <li><a href="#">待客之道</a></li>
+                            <li><a href="#">房东义务</a></li>
+                            <li><a href="#">开展体验</a></li>
+                            <li><a href="#">Open Homes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footOut">
+                    <div class="foot">
+                        <div class="footTit">客服支持</div>
+                        <ul>
+                            <li><a href="#">帮助</a></li>
+                            <li>
+                                <a href="#">邻里支持</a>
+                                <span class="footNew">新推出</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footElse">
+                <img src="images/air.png" class="footAir fl">
+                <img src="images/share.jpg" class="footShare fr">
+                <div class="footWord">
+                    <a href="#">京ICP备16017121号</a>
+                    <span>京ICP证 160773号</span>
+                    <img src="images/public.png">
+                    <a href="#">京公网安备 11010502032345号</a>
+                    <span>安彼迎网络（北京）有限公司</span>
+                    <a href="#">营业执照</a>
+                    <br>
+                    <span>© 2020 Airbnb, Inc. All rights reserved.</span>
+                    <a href="#">条款</a>
+                    <span> · </span>
+                    <a href="#">隐私政策</a>
+                    <span> · </span>
+                    <a href="#">网站地图</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="sectionlanguage" class="hide">
+        <div class="grey"></div>
+        <section>
+            <div class="langOut">
+                <div class="langDiv">
+                    <div id="closeOut">
+                        <div class="close" id="dislang">
+                            <img src="images/close.png">
+                        </div>
+                    </div>
+                    <div class="langpadding">
+                        <h2>选择语言和区域</h2>
+                        <ul>
+                            <li>
+                                <div class="langua">
+                                    <div class="lang">
+                                        <p>简体中文</p>
+                                        <span>中国</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="sectionmoney" class="hide">
+        <div class="grey"></div>
+        <section>
+            <div class="langOut">
+                <div class="langDiv">
+                    <div id="closeOut">
+                        <div class="close" id="dismoney">
+                            <img src="images/close.png">
+                        </div>
+                    </div>
+                    <div class="langpadding">
+                        <h2>选择货币</h2>
+                        <ul>
+                            <li>
+                                <div class="langua">
+                                    <div class="lang">
+                                        <p>人民币</p>
+                                        <span>CNY - ￥</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="JS/JS.js"></script>
+</body>
+
+</html>
