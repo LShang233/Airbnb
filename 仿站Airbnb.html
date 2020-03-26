@@ -1401,5 +1401,105 @@
 
     <script src="JS/JS.js"></script>
 </body>
+<!-- <script src="JS/jquery-1.12.4.min.js"></script>
+<script>
+    $(function() {
+        //二维码
+        $('#codes').click(function() {
+            $('#code').toggleClass('hide');
+        })
+        //语言和钱
+        function body(section) {
+            section.toggleClass('hide');
+            $('body').toggleClass('body');
+        }
+        $('.language').click(function() {body($('#sectionlanguage'))})
+        $('#dislang').click(function() {body($('#sectionlanguage'))})
+        $('#moneyA').click(function() {body($('#sectionmoney'))})
+        $('#dismoney').click(function() {body($('#sectionmoney'))})
+        //轮播
+        function changeBackground() {
 
+            $('#titA').stop(true,true);
+            $('#titB').stop(true,true);
+
+            $('#titA').toggleClass('hide');
+            $('#titB').toggleClass('hide');
+            $('#header').toggleClass('i1 i2');
+            $('#progA').css('width',0);
+            $('#progB').css('width',0);
+
+            pro();
+        }
+        //左右的按钮
+        $('#changepicA').click(function() {changeBackground()})
+        $('#changepicB').click(function() {changeBackground()})
+        //进度条
+        function pro() {
+            $('#progA').css('width',0).stop();
+            $('#progB').css('width',0).stop();
+
+            if($('#titA').hasClass('hide')) {
+                $('#progB').stop().animate({
+                    width: 86 
+                },4000,'linear',function() {
+                    changeBackground();                  
+                });
+            }
+            if($('#titB').hasClass('hide')) {
+                $('#progA').stop().animate({
+                    width: 86 
+                },4000,'linear',function() {
+                    changeBackground();
+                });
+            }
+        }
+        pro();
+        //这里和那里
+        $('#there').click(function() {
+            //修改button样式
+            $('#there').css({
+                'color': 'white',
+                'background-color': '#00848A'
+            })
+            $('#there').siblings('button').css({
+                color: '#484848',
+                'background-color': 'white'
+            })
+            //改变内容
+            $('#hererooms .roomImg').attr('src','images/img6.jpg');
+            $('#hererooms .spanGreen').text('整套公寓·2张床');
+            $('#hererooms .roomP').text('欢乐时光-33\近外滩\靠近地铁\超级市中心\东方明珠\外白渡桥');
+            $('#hererooms .roomP2').text('¥198');
+            $('#hererooms .roomSpan2').text('¥256');
+            $('#hererooms .starSpan').text('25·超赞房东');
+        })
+        $('#here').click(function() {
+            $('#here').css({
+                'color': 'white',
+                'background-color': '#00848A'
+            })
+            $('#here').siblings('button').css({
+                color: '#484848',
+                'background-color': 'white'
+            })
+            $('#hererooms .roomImg').attr('src','images/img1.jpg');
+            $('#hererooms .spanGreen').text('整套公寓·1张床');
+            $('#hererooms .roomP').text('【温煦】步行解放碑/洪崖洞3分钟/慵懒INS风楼下轻轨站/到八一好吃街3分钟/长江索道眺江一居');
+            $('#hererooms .roomP2').text('¥158');
+            $('#hererooms .roomSpan2').text('¥198');
+            $('#hererooms .starSpan').text('15·超赞房东');
+        })
+        //标签的左右滚动
+        //还不行
+        $('#wtgright').click(function() {
+            $('#wtgleft').removeClass('hide');
+            //获取transform:translateX(  px)  最终效果的值
+            var xpos = parseInt($('#wtgUl').attr('style').split("(")[1]);
+            $('#wtgUl').stop(true,true).animate({
+                'transform': "translateX(" + xpos + "px)"
+            },500)
+        })
+    })
+</script> -->
 </html>
